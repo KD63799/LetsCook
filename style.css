@@ -1,128 +1,170 @@
- /* Style pour la navbar */
- body {
+* {
+  box-sizing: border-box;
+  /* Inclus la bordure et le padding dans la taille de la boite */
+}
+
+body {
   margin: 0;
- }
- 
+}
+
+/* Style pour la navbar */
  .navbar {
+   display: flex;
+   align-items: center;
+   background-color: #5b2f16;
+   padding: 14px 20px;
+ }
+
+ .logo {
+   width: 5%;
+   padding: 5px 5px;
+ }
+
+ /* Style pour les liens de la navbar */
+ .navbar a {
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
+
+ /* Style pour le dropdown */
+ .dropdown {
+   position: relative;
+   display: inline-block;
+ }
+
+ /* Style pour le contenu du dropdown */
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #5b2f16;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+ }
+
+ /* Style pour les liens du dropdown */
+ .dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+ }
+
+ /* Style pour les liens du dropdown lorsqu'ils sont survolés */
+ .dropdown-content a:hover {
+   background-color: #5b2f16;
+ }
+
+ /* Style pour le bouton de la navbar lorsqu'il est survolé */
+ .navbar a:hover {
+   background-color: #5b2f16;
+   color: black;
+ }
+
+ /* Style pour le bouton de la navbar lorsqu'il est actif */
+ .navbar a.active {
+   color: white;
+ }
+
+ /* Style pour le contenu du dropdown lorsqu'il est affiché */
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }
+
+ /* Style pour la barre de recherche */
+ .search-container {
+   margin: 10px;
+ }
+
+ .search-container input[type=text] {
+   padding: 6px;
+   margin-bottom: 15px;
+   font-size: 14px;
+   border: none;
+   width: 100%;
+ }
+
+ .search-container button {
+   padding: 6px 10px;
+   margin-bottom: 15px;
+   background: #ddd;
+   font-size: 14px;
+   border: none;
+   cursor: pointer;
+ }
+
+ .search-container button:hover {
+   background: #ccc;
+ }
+
+ /* object-fit */
+ .container {
+   max-width: 1320px;
+   margin: auto;
+   padding-bottom: 20px;
+ }
+
+ .food {
+   width: 360px;
+   height: 360px;
+   object-fit: cover;
+ }
+
+ .boxes {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: stretch;
+   align-content: stretch;
+   row-gap: 20px;
+   gap: 20px;
+ }
+
+ .sidelink {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: flex-end;
+   align-items: flex-end;
+   align-content: stretch;
+ }
+
+ .foot {
     display: flex;
-    align-items: center;
-    background-color: #5b2f16;
-    padding: 14px 20px;
-  }
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+   background-color: #5b2f16;
+ }
 
-  .logo {
-    width: 5%;
-    padding: 5px 5px;
-  }
+ .box {
+   width: 360px;
+   -webkit-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.8); 
+   box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.8);
+ }
 
-  /* Style pour les liens de la navbar */
-  .navbar a {
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+ .backgrimg {
+  min-height: 300px;
+  background-image: url("logo_icones/cooking.svg");
+  background-position: bottom; 
+  background-size: 100%;
+  background-repeat: no-repeat;
+ }
 
-  /* Style pour le dropdown */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-
-  /* Style pour le contenu du dropdown */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #5b2f16;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-
-  /* Style pour les liens du dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  /* Style pour les liens du dropdown lorsqu'ils sont survolés */
-  .dropdown-content a:hover {
-    background-color: #5b2f16;
-  }
-
-  /* Style pour le bouton de la navbar lorsqu'il est survolé */
-  .navbar a:hover {
-    background-color: #5b2f16;
-    color: black;
-  }
-
-  /* Style pour le bouton de la navbar lorsqu'il est actif */
-  .navbar a.active {
-    color: white;
-  }
-
-  /* Style pour le contenu du dropdown lorsqu'il est affiché */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  /* Style pour la barre de recherche */
-  .search-container {
-    margin: 10px;
-  }
-
-  .search-container input[type=text] {
-    padding: 6px;
-    margin-bottom: 15px;
-    font-size: 14px;
-    border: none;
-    width: 100%;
-  }
-
-  .search-container button {
-    padding: 6px 10px;
-    margin-bottom: 15px;
-    background: #ddd;
-    font-size: 14px;
-    border: none;
-    cursor: pointer;
-  }
-
-  .search-container button:hover {
-    background: #ccc;
-  }
-
-/* object-fit */
-.container {
-  max-width: 800px;
+.footlist {
+  color: white;
+  text-decoration: underline;
+  font-size: 20px;
 }
 
-.food {
-width: 100%;
-}
-
-.boxes {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: stretch;
-	align-content: stretch;
-}
-
-.foot {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: stretch;
-	align-content: stretch;
+.Copyright {
   background-color: #5b2f16;
-}
+  padding: 20px;
+  text-align: center;
 
-.box {
-  width: 300px;
-  border: 1px solid red;
 }
