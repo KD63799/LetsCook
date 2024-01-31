@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="signup.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="mw1320">
+            <div class="headlogo">
+                <img class="logo" src="logo_icones/logo.svg" alt="logoletscook">
+            </div>
+            <div class="navbar">
+                <div>
+                    <!-- Bouton pour Acceuil -->
+                    <a href="index.html">Acceuil</a>
+
+                    <!-- Conteneur pour le dropdown des Recettes -->
+                    <div class="dropdown">
+                        <!-- Bouton pour Recettes -->
+                        <button class="dropbtn">Recettes</button>
+
+                        <!-- Contenu du dropdown des Recettes -->
+                        <div class="dropdown-content">
+                            <a href="#">Recette 1</a>
+                            <a href="#">Recette 2</a>
+                            <a href="#">Recette 3</a>
+                        </div>
+                        <!-- Bouton pour Tendances -->
+                    </div>
+                    <a href="#">Tendances</a>
+                </div>
+            </div>
+            <div class="searchb">
+                <input class="searchbar" type="text" placeholder="Recherche..">
+                <img class="blur" src="logo_icones/search-solid-white.svg" alt="loupe">
+                <a href="signup.html"><i class="fa-solid fa-user"
+                        style="color: #ffffff ; padding-left : 4px ; width: 20px;"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div>
+            <img src="logo_icones\foodbeachlsmall.jpg" alt="foodbeach">
+        </div>
+        <div class="formulaire">
+            <h1 class="Signuptitle">Sign Up</h1>
+            <p class="subtitle">Get full access</p>
+            <form action="/submit_signup" method="post">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" placeholder="John"><br>
+
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Doe" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="youremail@email.com" required><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password" required><br>
+
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm password" placeholder="Confirm password"
+                    required><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+33" required><br>
+
+                <input type="submit" value="Register now">
+                <p>Already have an account? <a class="connexionlink" href="#"> Connexion </a> </p>
+            </form>
+        </div>
+    </main>
+
+    <div class="backgrimg"></div>
+
+    <footer>
+        <div class="mw1320f">
+            <div class="foot">
+                <div class="footlinks">
+                    <ul>
+                        <li> <a class="footlist" href="#"> Acceuil</a> </li>
+                        <li> <a class="footlist" href="#"> Recettes</a> </li>
+                        <li> <a class="footlist" href="#"> Contact</a> </li>
+                        <li> <a class="footlist" href="#"> Politique de confidentialité</a> </li>
+                    </ul>
+                </div>
+
+                <div class="followus">
+                    <ul>
+                        <li>Suivez Nous</li>
+                        <li><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i
+                                class="fa-brands fa-square-twitter"></i></li>
+                    </ul>
+                </div>
+                <div class="mailus">
+                    <ul>
+                        <li>Abonnez-vous à notre Newsletter</li>
+                        <li>
+                            <form class="footerform">
+                                <p class=" email">Email: <br>
+                                    <input class="abonne" type="text">
+                                </p>
+                            </form>
+                        </li>
+                        <li><label class="fcontainer">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, quod!
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="Copyright">
+            <p>Copyright@ 2024</p>
+        </div>
+    </footer>
+</body>
+
+</html>

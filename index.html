@@ -12,240 +12,362 @@
 <body>
 
     <header>
-        <div class="navbar">
+        <div class="mw1320">
+            <div class="headlogo">
+                <img class="logo" src="logo_icones/logo.svg" alt="logoletscook">
+            </div>
+            <div class="navbar">
+                <div>
+                    <!-- Bouton pour Acceuil -->
+                    <a href="index.html">Acceuil</a>
 
-            <img class="logo" src="logo_icones/logo.svg" alt="logoletscook">
-            <!-- Bouton pour Acceuil -->
-            <a href="#" class="active">Acceuil</a>
+                    <!-- Conteneur pour le dropdown des Recettes -->
+                    <div class="dropdown">
+                        <!-- Bouton pour Recettes -->
+                        <button class="dropbtn">Recettes</button>
 
-            <!-- Conteneur pour le dropdown des Recettes -->
-            <div class="dropdown">
-                <!-- Bouton pour Recettes -->
-                <button class="dropbtn">Recettes</button>
-
-                <!-- Contenu du dropdown des Recettes -->
-                <div class="dropdown-content">
-                    <a href="#">Recette 1</a>
-                    <a href="#">Recette 2</a>
-                    <a href="#">Recette 3</a>
+                        <!-- Contenu du dropdown des Recettes -->
+                        <div class="dropdown-content">
+                            <a href="#">Recette 1</a>
+                            <a href="#">Recette 2</a>
+                            <a href="#">Recette 3</a>
+                        </div>
+                        <!-- Bouton pour Tendances -->
+                    </div>
+                    <a href="#">Tendances</a>
                 </div>
-                <!-- Bouton pour Tendances -->
-                <a href="#">Tendances</a>
-
-                <input type="text" placeholder="Search..">
+            </div>
+            <div class="searchb">
+                <input class="searchbar" type="text" placeholder="Recherche..">
+                <img class="blur" src="logo_icones/search-solid-white.svg" alt="loupe">
+                <a href="signup.html"><i class="fa-solid fa-user"
+                        style="color: #ffffff ; padding-left : 4px ; width: 20px;"></i></a>
             </div>
         </div>
     </header>
     <main class="container">
-        <h1>Toutes les Recettes</h1>
+        <h1 class="titre"> Toutes les Recettes</h1>
         <div class="boxes">
             <article class="box">
-                <img class="food" src="logo_icones\cake.jpg" alt="cake">
-                <h1>Rasperry Cake</h1>
-                <p> Difficulté :
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla tenetur laudantium ad cum, esse
-                    corrupti impedit rem nihil soluta modi, vel exercitationem quod, placeat iusto quasi sint est eum.
-                </p>
-                <a class="sidelink" href="#">En savoir plus</a>
+                <div class="picture">
+                    <img class="food" src="logo_icones\cake.jpg" alt="cake">
+                    <div class="hoverimg">
+                        <img src="logo_icones\arrowicon.png" alt="deploy">
+                    </div>
+
+                    <div class="badge">Gluten</div>
+                </div>
+                <div class="description">
+                    <h1 class="titres">Rasperry Cake</h1>
+                    <p> Difficulté :
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>Une explosion de saveurs végétales harmonieusement assemblées, révélant la richesse et la
+                        diversité
+                        de la nature dans une expérience gustative unique.
+                    </p>
+                    <a class="sidelink" href="#">En savoir plus</a>
+                </div>
             </article>
             <article class="box">
-                <img class="food" src="logo_icones\tacos.jpg" alt="tacos">
-                <h1>Tacos</h1>
-                <p> Difficulté :
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla tenetur laudantium ad cum, esse
-                    corrupti impedit rem nihil soluta modi, vel exercitationem quod, placeat iusto quasi sint est eum.
-                </p>
-                <a class="sidelink" href="#">En savoir plus</a>
+                <div class="picture">
+                    <img class="food" src="logo_icones\tacos.jpg" alt="tacos">
+                    <div class="hoverimg">
+                        <img src="logo_icones\arrowicon.png" alt="deploy">
+                    </div>
+                    <div class="badge">Meat</div>
+                </div>
+                <div class="description">
+                    <h1 class="titres">Tacos</h1>
+                    <p> Difficulté :
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>Une danse savoureuse de tendreté et d'arômes, ce chef-d'œuvre culinaire à base de viande offre
+                        une
+                        expérience gustative aussi indulgente que mémorable.
+                    </p>
+                    <a class="sidelink" href="#">En savoir plus</a>
+                </div>
             </article>
             <article class="box">
-                <img class="food" src="logo_icones\Saumon.jpg" alt="Salmon">
-                <h1>Salmon dishes</h1>
-                <p> Difficulté :
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla tenetur laudantium ad cum, esse
-                    corrupti impedit rem nihil soluta modi, vel exercitationem quod, placeat iusto quasi sint est eum.
-                </p>
-                <a class="sidelink" href="#">En savoir plus</a>
+                <div class="picture">
+                    <img class="food" src="logo_icones\Saumon.jpg" alt="Salmon">
+                    <div class="hoverimg">
+                        <img src="logo_icones\arrowicon.png" alt="deploy">
+                    </div>
+                    <div class="badge">Fish</div>
+                </div>
+                <div class="description">
+                    <h1 class="titres">Salmon dishes</h1>
+                    <p> Difficulté :
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>Une symphonie de textures et de couleurs qui transporte vos papilles au cœur d'un univers
+                        végétal délicieusement surprenant.
+                    </p>
+                    <a class="sidelink" href="#">En savoir plus</a>
+                </div>
             </article>
             <article class="box">
-                <img class="food" src="logo_icones\saladpasta.jpg" alt="pastasalad">
-                <h1>Salad Pasta</h1>
-                <p> Difficulté :
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla tenetur laudantium ad cum, esse
-                    corrupti impedit rem nihil soluta modi, vel exercitationem quod, placeat iusto quasi sint est eum.
-                </p>
-                <a class="sidelink" href="#">En savoir plus</a>
+                <div class="picture">
+                    <img class="food" src="logo_icones\saladpasta.jpg" alt="pastasalad">
+                    <div class="hoverimg">
+                        <img src="logo_icones\arrowicon.png" alt="deploy">
+                    </div>
+                    <div class="badge">Vegan</div>
+                </div>
+                <div class="description">
+                    <h1 class="titres">Salad Pasta</h1>
+                    <p> Difficulté :
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>Une explosion de saveurs végétales harmonieusement assemblées, révélant la richesse et la
+                        diversité de la nature dans une expérience gustative unique.</p>
+                    <a class="sidelink" href="#">En savoir plus</a>
+                </div>
             </article>
             <article class="box">
-                <img class="food" src="logo_icones\poké.jpg" alt="pokébowl">
-                <h1>Pokébowl</h1>
-                <p> Difficulté :
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla tenetur laudantium ad cum, esse
-                    corrupti impedit rem nihil soluta modi, vel exercitationem quod, placeat iusto quasi sint est eum.
-                </p>
-                <a class="sidelink" href="#">En savoir plus</a>
+                <div class="picture">
+                    <img class="food" src="logo_icones\poké.jpg" alt="pokébowl">
+                    <div class="hoverimg">
+                        <img src="logo_icones\arrowicon.png" alt="deploy">
+                    </div>
+                    <div class="badge">Vegan</div>
+                </div>
+                <div class="description">
+                    <h1 class="titres">Pokébowl</h1>
+                    <p> Difficulté :
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>Une explosion de saveurs végétales harmonieusement assemblées, révélant la richesse et la
+                        diversité
+                        de la nature dans une expérience gustative unique.</p>
+                    <a class="sidelink" href="#">En savoir plus</a>
+                </div>
             </article>
             <article class="box">
-                <img class="food" src="logo_icones\oeuf.jpg" alt="eggs">
-                <h1>Eggs Tartine</h1>
-                <p> Difficulté :
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla tenetur laudantium ad cum, esse
-                    corrupti impedit rem nihil soluta modi, vel exercitationem quod, placeat iusto quasi sint est eum.
-                </p>
-                <a class="sidelink" href="#">En savoir plus</a>
+                <div class="picture">
+                    <img class="food" src="logo_icones\oeuf.jpg" alt="eggs">
+                    <div class="hoverimg">
+                        <img src="logo_icones\arrowicon.png" alt="deploy">
+                    </div>
+                    <div class="badge">Veggie</div>
+                </div>
+                <div class="description">
+                    <h1 class="titres">Eggs Tartine</h1>
+                    <p> Difficulté :
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>Une explosion de saveurs végétales harmonieusement assemblées, révélant la richesse et la
+                        diversité
+                        de la nature dans une expérience gustative unique.</p>
+                    <a class="sidelink" href="#">En savoir plus</a>
+                </div>
             </article>
             <article class="box">
-                <img class="food" src="logo_icones\burger.jpg" alt="Burger">
-                <h1>Burger</h1>
-                <p> Difficulté :
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla tenetur laudantium ad cum, esse
-                    corrupti impedit rem nihil soluta modi, vel exercitationem quod, placeat iusto quasi sint est eum.
-                </p>
-                <a class="sidelink" href="#">En savoir plus</a>
+                <div class="picture">
+                    <img class="food" src="logo_icones\burger.jpg" alt="Burger">
+                    <div class="hoverimg">
+                        <img src="logo_icones\arrowicon.png" alt="deploy">
+                    </div>
+                    <div class="badge">Meat</div>
+                </div>
+                <div class="description">
+                    <h1 class="titres">Burger</h1>
+                    <p> Difficulté :
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>Une danse savoureuse de tendreté et d'arômes, ce chef-d'œuvre culinaire à base de viande offre
+                        une expérience gustative aussi indulgente que mémorable.
+                    </p>
+                    <a class="sidelink" href="#">En savoir plus</a>
+                </div>
             </article>
             <article class="box">
-                <img class="food" src="logo_icones\pasta.jpg" alt="Pasta">
-                <h1>Pasta</h1>
-                <p> Difficulté :
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla tenetur laudantium ad cum, esse
-                    corrupti impedit rem nihil soluta modi, vel exercitationem quod, placeat iusto quasi sint est eum.
-                </p>
-                <a class="sidelink" href="#">En savoir plus</a>
+                <div class="picture">
+                    <img class="food" src="logo_icones\pasta.jpg" alt="Salmon Pasta">
+                    <div class="hoverimg">
+                        <img src="logo_icones\arrowicon.png" alt="deploy">
+                    </div>
+                    <div class="badge">Meat</div>
+                </div>
+                <div class="description">
+                    <h1 class="titres">Salmon Pasta</h1>
+                    <p> Difficulté :
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>Une explosion de saveurs végétales harmonieusement assemblées, révélant la richesse et la
+                        diversité
+                        de la nature dans une expérience gustative unique.
+                    </p>
+                    <a class="sidelink" href="#">En savoir plus</a>
+                </div>
             </article>
             <article class="box">
-                <img class="food" src="logo_icones\karage.jpg" alt="Karage">
-                <h1>Karage Chicken</h1>
-                <p> Difficulté :
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla tenetur laudantium ad cum, esse
-                    corrupti impedit rem nihil soluta modi, vel exercitationem quod, placeat iusto quasi sint est eum.
-                </p>
-                <a class="sidelink" href="#">En savoir plus</a>
+                <div class="picture">
+                    <img class="food" src="logo_icones\karage.jpg" alt="Karage">
+                    <div class="hoverimg">
+                        <img src="logo_icones\arrowicon.png" alt="deploy">
+                    </div>
+                    <div class="badge">Meat</div>
+                </div>
+                <div class="description">
+                    <h1 class="titres">Karage Chicken</h1>
+                    <p> Difficulté :
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>"Une danse savoureuse de tendreté et d'arômes, ce chef-d'œuvre culinaire à base de viande offre
+                        une
+                        expérience gustative aussi indulgente que mémorable."
+                    </p>
+                    <a class="sidelink" href="#">En savoir plus</a>
+                </div>
             </article>
             <article class="box">
-                <img class="food" src="logo_icones\meat.jpg" alt="Meat">
-                <h1>Meat with vegetables</h1>
-                <p> Difficulté :
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla tenetur laudantium ad cum, esse
-                    corrupti impedit rem nihil soluta modi, vel exercitationem quod, placeat iusto quasi sint est eum.
-                </p>
-                <a class="sidelink" href="#">En savoir plus</a>
+                <div class="picture">
+                    <img class="food" src="logo_icones\meat.jpg" alt="Meat">
+                    <div class="hoverimg">
+                        <img src="logo_icones\arrowicon.png" alt="deploy">
+                    </div>
+                    <div class="badge">Meat</div>
+                </div>
+                <div class="description">
+                    <h1 class="titres">Meat with vegetables</h1>
+                    <p> Difficulté :
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>Une symphonie de textures et de couleurs qui transporte vos papilles au cœur d'un univers végétal
+                        délicieusement surprenant.</p>
+                    <a class="sidelink" href="#">En savoir plus</a>
+                </div>
             </article>
             <article class="box">
-                <img class="food" src="logo_icones\ramen.jpg" alt="Ramen">
-                <h1>Ramen noodles</h1>
-                <p> Difficulté :
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla tenetur laudantium ad cum, esse
-                    corrupti impedit rem nihil soluta modi, vel exercitationem quod, placeat iusto quasi sint est eum.
-                </p>
-                <a class="sidelink" href="#">En savoir plus</a>
+                <div class="picture">
+                    <img class="food" src="logo_icones\ramen.jpg" alt="Ramen">
+                    <div class="hoverimg">
+                        <img src="logo_icones\arrowicon.png" alt="deploy">
+                    </div>
+                    <div class="badge">Meat</div>
+                </div>
+                <div class="description">
+                    <h1 class="titres">Ramen noodles</h1>
+                    <p> Difficulté :
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>Une symphonie de textures et de couleurs qui transporte vos papilles au cœur d'un univers végétal
+                        délicieusement surprenant.</p>
+                    <a class="sidelink" href="#">En savoir plus</a>
+                </div>
             </article>
             <article class="box">
-                <img class="food" src="logo_icones\spaghetti.jpg" alt="Spaghetti">
-                <h1>Spaghetti</h1>
-                <p> Difficulté :
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla tenetur laudantium ad cum, esse
-                    corrupti impedit rem nihil soluta modi, vel exercitationem quod, placeat iusto quasi sint est eum.
-                </p>
-                <a class="sidelink" href="#">En savoir plus</a>
+                <div class="picture">
+                    <img class="food" src="logo_icones\spaghetti.jpg" alt="Spaghetti">
+                    <div class="hoverimg">
+                        <img src="logo_icones\arrowicon.png" alt="deploy">
+                    </div>
+                    <div class="badge">Vegan</div>
+                </div>
+                <div class="description">
+                    <h1 class="titres">Spaghetti</h1>
+                    <p> Difficulté :
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>"Une explosion de saveurs végétales harmonieusement assemblées, révélant la richesse et la
+                        diversité
+                        de la nature dans une expérience gustative unique."</p>
+                    <a class="sidelink" href="#">En savoir plus</a>
+                </div>
+            </article>
         </div>
     </main>
 
-    <footer>
-        <div class="backgrimg"></div>
-        <!-- <img src="logo_icones/cooking.svg" alt="logocooking"> -->
-        <div class="foot">
-            <div>
-                <ul>
-                    <li> <a class="footlist href=" #">Acceuil</a></li>
-                    <li> <a class="footlist href=" #">Recettes</a></li>
-                    <li> <a class="footlist href=" #">Contact</a></li>
-                    <li> <a class="footlist href=" #">Politique de confidentialité</a></li>
-                </ul>
-            </div>
+    <div class="backgrimg"></div>
 
-            <div>
-                <ul>
-                    <li>Suivez Nous</li>
-                    <li><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i
-                            class="fa-brands fa-square-twitter"></i></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>Abonnez-vous à notre Newsletter</li>
-                    <li>Email :</li>
-                </ul>
+    <footer>
+        <div class="mw1320f">
+            <div class="foot">
+                <div class="footlinks">
+                    <ul>
+                        <li> <a class="footlist" href="#"> Acceuil</a> </li>
+                        <li> <a class="footlist" href="#"> Recettes</a> </li>
+                        <li> <a class="footlist" href="#"> Contact</a> </li>
+                        <li> <a class="footlist" href="#"> Politique de confidentialité</a> </li>
+                    </ul>
+                </div>
+
+                <div class="followus">
+                    <ul>
+                        <li>Suivez Nous</li>
+                        <li><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i
+                                class="fa-brands fa-square-twitter"></i></li>
+                    </ul>
+                </div>
+                <div class="mailus">
+                    <ul>
+                        <li>Abonnez-vous à notre Newsletter</li>
+                        <li>
+                            <form>
+                                <p class=" email">Email: <br>
+                                    <input class="abonne" type="text">
+                                </p>
+                            </form>
+                        </li>
+                        <li><label class="container">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, quod!
+                            </label>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="Copyright">
